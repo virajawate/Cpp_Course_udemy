@@ -4,27 +4,27 @@ using namespace std;
 
 class base
 {
-    public:
+public:
     base()
     {
-        cout<<"Default constructor of base class"<<endl;
+        cout << "Default constructor of base class" << endl;
     }
     base(int x)
     {
-        cout<<"Parameterized constructor of base class"<<x<<endl;
+        cout << "Parameterized constructor of base class" << x << endl;
     }
 };
 
 class derived : public base
 {
-    public:
+public:
     derived() : base()
     {
-        cout<<"Default constructor of derived class"<<endl;
+        cout << "Default constructor of derived class" << endl;
     }
-    derived(int c) : base (c)
+    derived(int c) : base(c)
     {
-        cout<<"Parameterized constructor of derived class "<<c<<endl;
+        cout << "Parameterized constructor of derived class " << c << endl;
     }
 };
 
@@ -33,10 +33,10 @@ int main()
     base b1;
     derived d1;
 
-    cout<<"Going for parameterized constructor "<<endl;
+    cout << "Going for parameterized constructor " << endl;
 
     base b2(4);
-    cout<<endl;
+    cout << endl;
     derived d2(9);
 
     return 0;

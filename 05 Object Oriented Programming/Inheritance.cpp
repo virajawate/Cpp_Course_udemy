@@ -2,10 +2,10 @@
 
 using namespace std;
 
-//Parent class
+// Parent class
 class rectangle
 {
-    
+
 public:
     int length = 0, breadth = 0;
     void showdata()
@@ -15,7 +15,7 @@ public:
 
     int Area()
     {
-        return (length*breadth);
+        return (length * breadth);
     }
 };
 
@@ -30,7 +30,7 @@ public:
     }
     int volume()
     {
-        return (length*breadth*height);
+        return (length * breadth * height);
     }
 };
 
@@ -39,10 +39,10 @@ int main()
     /**
      * @brief Inheritance
      * Inheritance of parent class to child class
-     * Inheritance will only transfer 
+     * Inheritance will only transfer
      * class memebers and member functions
      * Inheritance don't transfer the data of the class
-    */
+     */
 
     rectangle rt;
     rt.length = 10;
@@ -52,13 +52,13 @@ int main()
     cbd.length = 10;
     cbd.breadth = 5;
     cbd.height = 12;
-    
+
     rt.showdata();
     cbd.showdata();
 
-    cout<<"Area of rectangle : "<<rt.Area()<<endl;
-    cout<<"Area of rectangle : "<<cbd.Area()<<endl;
-    cout<<"Volume of cuboid : "<<cbd.volume()<<endl;
+    cout << "Area of rectangle : " << rt.Area() << endl;
+    cout << "Area of rectangle : " << cbd.Area() << endl;
+    cout << "Volume of cuboid : " << cbd.volume() << endl;
 
     return 0;
 }

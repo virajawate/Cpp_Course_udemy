@@ -58,7 +58,7 @@ int main()
      * @brief Types of Constructors
      * Parameterized
      * Non-Parameterized
-     * Default 
+     * Default
      * Copy
      */
     person shashank("Shashank", 22, 108, 6);
