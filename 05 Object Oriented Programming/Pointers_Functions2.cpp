@@ -12,7 +12,7 @@ const int size = 5;
 void printarr(int *ptr)
 {
     for (int i = 0; i < size; i++)
-        cout << *ptr++ << " "; 
+        cout << *ptr++ << " ";
     // Increamenting the pointer to access the next element of the array
 }
 
@@ -29,10 +29,26 @@ void printarr2(int ar[], int sz)
         cout << ar[i] << " ";
 }
 
+void inputarr(int *b_ptr)
+{
+
+    for (int i = 0; i < size; i++)
+        cout << *b_ptr++ << " ";
+    cout << endl;
+}
+
 int main()
 {
     int arr[size] = {34, 34, 343, 545, 456};
+    int b[size]; // Empty array
+    int *b_ptrs; // Created a 'int' pointer
 
+    b_ptrs = b; // pointer is loaded with array name
+    // Inputing data with pointers
+    for (int i = 0; i < size; i++)
+        cin >> *b_ptrs++;
+
+    inputarr(b);
     printarr(arr);
     cout << endl;
     // arr is same as &arr[0]
