@@ -17,7 +17,7 @@
         d. Pointers
         e. Polymorphism
         f. Friend Function and Friend Class
-        g. Static Member Variable, Functions
+        g. Static Member Variable and Functions
     6. File Handling
     7. Exception Handling
 - Mini-Project : **ATM Machine**
