@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class parent
+class parent // Absolute Abstract Class
 {
     public:
         virtual void show() = 0;
@@ -29,14 +29,9 @@ class girl : public parent
 int main()
 {
     parent *ptr;
-
     ptr = new boy();
-
     ptr->show();
-
     ptr = new girl();
-
     ptr->show();
-
     return 0;    
 }

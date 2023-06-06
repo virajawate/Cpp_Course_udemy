@@ -14,6 +14,8 @@ class person
      * This function's parameters have same name as class member
      * thus 'this' pointer is used to access the class members.
      * 
+     * This type of declarartion is called shadowed declaration
+     * 
      * 'this' pointer is refers to calling object.
      * User can not access/modified 'this' pointer.
      * 

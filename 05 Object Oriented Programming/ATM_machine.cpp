@@ -1,4 +1,4 @@
-#include <ncurses.h> //conio.h for lunix system
+#include <ncurses.h> //works as <conio.h> for lunix system
 #include <iostream>
 #include <string>
 #include <stdlib.h>

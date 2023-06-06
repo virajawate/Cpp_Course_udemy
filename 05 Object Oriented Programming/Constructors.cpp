@@ -6,7 +6,7 @@ class person
 {
     private:
         string name;
-        int age, weight, height;
+        double age, weight, height;
     
     public:
         person() // NON-Parameterized Constructor
@@ -16,7 +16,7 @@ class person
             weight = 77;
             height = 5.8;
         }
-        // person(string naam, int umar, int wzn, int lmbai) // Parameterized COnstructor
+        // person(string naam, double umar, double wzn, double lmbai) // Parameterized COnstructor
         // {
         //     name = naam;
         //     age = umar;
@@ -30,7 +30,7 @@ class person
             weight = shashank.weight;
             height = shashank.height;
         }
-        person(string naam = "Awate", int umar = 45, int wzn = 100, int lmbai = 5.9) // Parameterized COnstructor
+        person(string naam = "Awate", double umar = 45, double wzn = 100, double lmbai = 5.9) // Parameterized COnstructor
         {
             name = naam;
             age = umar;
