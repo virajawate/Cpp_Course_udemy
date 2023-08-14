@@ -7,30 +7,30 @@ Even & Odd number
 
 int main()
 {
-    int arr[]={12,23,54,7,23,8,23};
+    int arr[] = {12, 23, 54, 7, 23, 8, 23};
     int len;
 
-    len = sizeof(arr)/sizeof(arr[0]);
+    len = sizeof(arr) / sizeof(arr[0]);
 
-    cout<<"Even elements in array : ";
-    for(int i=0; i<len; i++)
+    cout << "Even elements in array : ";
+    for (int i = 0; i < len; i++)
     {
-        if(arr[i]%2==0)
+        if (arr[i] % 2 == 0)
         {
-            cout<<arr[i]<<" ";
+            cout << arr[i] << " ";
         }
     }
-    cout<<endl;
+    cout << endl;
 
-    cout<<"Odd elements in array : ";
-    for(int i=0; i<len; i++)
+    cout << "Odd elements in array : ";
+    for (int i = 0; i < len; i++)
     {
-        if(arr[i]%2!=0)
+        if (arr[i] % 2 != 0)
         {
-            cout<<arr[i]<<" ";
+            cout << arr[i] << " ";
         }
     }
-    cout<<endl;
+    cout << endl;
 
     return 0;
 }

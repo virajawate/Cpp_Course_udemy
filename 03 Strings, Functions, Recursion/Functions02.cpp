@@ -3,7 +3,7 @@
 using namespace std;
 
 int add(int, int);
-float add(float,float);
+float add(float, float);
 string add(string, string);
 
 int main()
@@ -12,46 +12,47 @@ int main()
     float num1, num2, decsum;
     string var1, var2, concat;
 
-    cout<<endl<<"Enter 1st string :";
+    cout << endl
+         << "Enter 1st string :";
     getline(cin, var1);
-    cout<<"Enter 2nd string :";
+    cout << "Enter 2nd string :";
     getline(cin, var2);
 
-    cout<<"Enter number :";
-    cin>>a>>b;
+    cout << "Enter number :";
+    cin >> a >> b;
 
-    cout<<"Enter decimals :";
-    cin>>num1>>num2;
+    cout << "Enter decimals :";
+    cin >> num1 >> num2;
 
-    sum = add(a,b);
-    cout<<sum<<endl;
+    sum = add(a, b);
+    cout << sum << endl;
 
     decsum = add(num1, num2);
-    cout<<decsum<<endl;
+    cout << decsum << endl;
 
     concat = add(var1, var2);
-    cout<<concat<<endl;
+    cout << concat << endl;
 
     return 0;
 }
 
 int add(int x, int y)
 {
-    int sum =0;
-    sum = x+y;
+    int sum = 0;
+    sum = x + y;
     return sum;
 }
 
 float add(float x, float y)
 {
-    float sum =0;
-    sum = x+y;
+    float sum = 0;
+    sum = x + y;
     return sum;
 }
 
 string add(string x, string y)
 {
     string sum = "";
-    sum = x+y;
+    sum = x + y;
     return sum;
 }

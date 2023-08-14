@@ -42,7 +42,8 @@ int main()
     /*
     Deleting data from map
     */
-    cout << endl << "Deleting the top of empoyee...." << endl;
+    cout << endl
+         << "Deleting the top of empoyee...." << endl;
     unordered_map<int, string>::iterator del = empoyee.begin();
     empoyee.erase(del);
     for (unordered_map<int, string>::iterator i = empoyee.begin(); i != empoyee.end(); i++)

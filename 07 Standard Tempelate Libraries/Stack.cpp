@@ -111,7 +111,7 @@ void stack_all(stack<int> numbers)
             viewstack.pop();
         }
         swapstack.swap(numbers);
-        cout<<swapstack.top()<<endl;
+        cout << swapstack.top() << endl;
         cout << "\nStack View Complete" << endl;
     }
 }

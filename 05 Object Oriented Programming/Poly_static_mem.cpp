@@ -2,16 +2,15 @@
 
 class A
 {
-    public:
+public:
     A()
     {
-        std::cout<<"Constructor"<<std::endl;
+        std::cout << "Constructor" << std::endl;
         var++;
-        std::cout<<"Static member"<<var<<"now increment"<<std::endl;
+        std::cout << "Static member" << var << "now increment" << std::endl;
     }
 
     static int var;
-
 };
 int A::var = 0;
 

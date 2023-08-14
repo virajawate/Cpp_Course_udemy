@@ -6,7 +6,7 @@ using namespace std;
  * @brief The program shows functioning of pointers on array
  * the program has array 'arr' and pointer 'ptr'
  * the pointer 'ptr' can be maniuplated access the value of array data
- * 
+ *
  * @return int
  */
 int main()

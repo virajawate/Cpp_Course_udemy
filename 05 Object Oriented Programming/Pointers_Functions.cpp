@@ -17,11 +17,11 @@ void square(int *ptr)
 }
 
 /**
- * @brief This function is the example that 
- * without return type the data in the variable 
+ * @brief This function is the example that
+ * without return type the data in the variable
  * can not be changed.
- * 
- * 
+ *
+ *
  * @param x  is flushed outside of the scope of the function
  */
 void sq(int x)
@@ -44,11 +44,11 @@ int main()
 
     sq(num);
     cout << "Squared twice : " << num << endl;
-    //Remark the can't be returned thus the variable 'x' is delete outside the scope of the function
+    // Remark the can't be returned thus the variable 'x' is delete outside the scope of the function
 
-    cout<<"The square of "<<num2;
-    square(ptr2); 
-    //ptr2 is & num2
+    cout << "The square of " << num2;
+    square(ptr2);
+    // ptr2 is & num2
     cout << " is  : " << num2 << endl;
 
     return 0;

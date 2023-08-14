@@ -5,7 +5,7 @@ struct Padding
 {
     int age;
     short int ID;
-    double salary;    
+    double salary;
 };
 int main()
 {
@@ -14,7 +14,9 @@ int main()
     pad.ID = 3223;
     pad.salary = 47400;
 
-    cout<<"Age :"<<pad.age<<endl<<"ID :"<<pad.ID<<endl<<"Salary :"<<pad.salary<<endl;
+    cout << "Age :" << pad.age << endl
+         << "ID :" << pad.ID << endl
+         << "Salary :" << pad.salary << endl;
 
     return 0;
 }

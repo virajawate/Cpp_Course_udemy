@@ -50,7 +50,7 @@ int main()
         cout << *i << "  ";
     }
     cout << endl;
-    cout<<"Size of Vec1 : "<<Vec1.size()<<" Size of Vec2 : "<<Vec2.size()<<endl;
+    cout << "Size of Vec1 : " << Vec1.size() << " Size of Vec2 : " << Vec2.size() << endl;
     cout << "Capacity of Vec1 : " << Vec1.capacity() << " Capacity of Vec2 :" << Vec2.capacity() << endl;
     return 0;
 }

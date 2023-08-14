@@ -51,31 +51,33 @@ public:
 
     void setMobile(string prev_mobile, string new_mobile)
     {
-        if(prev_mobile == mobile_no)
+        if (prev_mobile == mobile_no)
         {
             mobile_no = new_mobile;
-            cout<<endl<<"Successfult Updated Mobile No.";
+            cout << endl
+                 << "Successfult Updated Mobile No.";
             getch();
         }
         else
         {
-            cout<<endl<<"Incorrect !!! Old Mobile Number. ";
+            cout << endl
+                 << "Incorrect !!! Old Mobile Number. ";
             getch();
         }
     }
 
     void cashWithdraw(int acc_amount)
     {
-        if(acc_amount >0 && acc_amount < balance)
+        if (acc_amount > 0 && acc_amount < balance)
         {
             balance -= acc_amount;
-            cout<<"Please Collect your cash..."<<endl;
-            cout<<"Available Balance :"<<balance<<endl;
+            cout << "Please Collect your cash..." << endl;
+            cout << "Available Balance :" << balance << endl;
             getch();
         }
         else
         {
-            cout<<"Invaild Input or Insufficient Balance."<<endl;
+            cout << "Invaild Input or Insufficient Balance." << endl;
             getch();
         }
     }
@@ -83,7 +85,7 @@ public:
 
 int main()
 {
-    int choice =0, enterpin;
+    int choice = 0, enterpin;
     long int enterAcc_no;
 
     system("clear");
@@ -96,14 +98,14 @@ int main()
     {
         system("clear");
 
-        cout<<"*****Welcome to ATM*****"<<endl;
-        cout<<"Enter Your Account Number : ";
-        cin>>enterAcc_no;
+        cout << "*****Welcome to ATM*****" << endl;
+        cout << "Enter Your Account Number : ";
+        cin >> enterAcc_no;
 
-        cout<<"Enter PIN :";
-        cin>>enterpin;
+        cout << "Enter PIN :";
+        cin >> enterpin;
 
-        if((enterAcc_no == user1.getAccNo() && (enterpin == user1.getPin())))
+        if ((enterAcc_no == user1.getAccNo() && (enterpin == user1.getPin())))
         {
             do
             {
@@ -112,63 +114,62 @@ int main()
 
                 // system("clear");
 
-                cout<<"*****Welcome to ATM*****"<<endl;
-                cout<<"Select Options - "<<endl;
-                cout<<"1. Check Balance."<<endl;
-                cout<<"2. Cash Withdraw."<<endl;
-                cout<<"3. Show User Details."<<endl;
-                cout<<"4. Update Mobile Number."<<endl;
-                cout<<"5. Exit"<<endl;
+                cout << "*****Welcome to ATM*****" << endl;
+                cout << "Select Options - " << endl;
+                cout << "1. Check Balance." << endl;
+                cout << "2. Cash Withdraw." << endl;
+                cout << "3. Show User Details." << endl;
+                cout << "4. Update Mobile Number." << endl;
+                cout << "5. Exit" << endl;
 
-                cin>>choice;
+                cin >> choice;
 
-                switch(choice)
+                switch (choice)
                 {
-                    case 1:
-                        cout<<"Your Bank Balance :"<<user1.getBalance()<<endl;
-                        getch();
-                        break;
-                    
-                    case 2:
-                        cout<<"Enter the amount :";
-                        cin>>amount;
-                        user1.cashWithdraw(amount);
-                        break;
+                case 1:
+                    cout << "Your Bank Balance :" << user1.getBalance() << endl;
+                    getch();
+                    break;
 
-                    case 3:
-                        cout<<"***User Details***"<<endl;
-                        cout<<"Accout Number :"<<user1.getAccNo()<<endl;
-                        cout<<"Name of User :"<<user1.getName()<<endl;
-                        cout<<"Balance available :"<<user1.getBalance()<<endl;
-                        cout<<"Mobile number :"<<user1.getMobileNo()<<endl;
-                        cout<<"Pin number :"<<user1.getPin()<<endl;
-                        getch();
-                        break;
+                case 2:
+                    cout << "Enter the amount :";
+                    cin >> amount;
+                    user1.cashWithdraw(amount);
+                    break;
 
-                    case 4:
-                        cout<<"Enter your old number :";
-                        cin>>oldMobile;
-                        cout<<"Enter your new number :";
-                        cin>>newMobile;
+                case 3:
+                    cout << "***User Details***" << endl;
+                    cout << "Accout Number :" << user1.getAccNo() << endl;
+                    cout << "Name of User :" << user1.getName() << endl;
+                    cout << "Balance available :" << user1.getBalance() << endl;
+                    cout << "Mobile number :" << user1.getMobileNo() << endl;
+                    cout << "Pin number :" << user1.getPin() << endl;
+                    getch();
+                    break;
 
-                        user1.setMobile(oldMobile, newMobile);
-                        break;
+                case 4:
+                    cout << "Enter your old number :";
+                    cin >> oldMobile;
+                    cout << "Enter your new number :";
+                    cin >> newMobile;
 
-                    case 5:
-                        exit(0);
+                    user1.setMobile(oldMobile, newMobile);
+                    break;
 
-                    default:
-                        cout<<"Enter Vaild Data."<<endl;
+                case 5:
+                    exit(0);
+
+                default:
+                    cout << "Enter Vaild Data." << endl;
                 }
-            }while(1);
-            
+            } while (1);
         }
         else
         {
-            cout<<"User Details are invaild !!!"<<endl;
+            cout << "User Details are invaild !!!" << endl;
             getch();
         }
-    }while(1);
+    } while (1);
 
     return 0;
 }

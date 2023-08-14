@@ -3,34 +3,34 @@ using namespace std;
 
 int main()
 {
-    int score=0;
+    int score = 0;
 
-    cout<<"Enter your score : ";
-    cin>>score;
+    cout << "Enter your score : ";
+    cin >> score;
 
-    if(score>=80 && score<100)
+    if (score >= 80 && score < 100)
     {
-        cout<<"Distiction"<<endl;
+        cout << "Distiction" << endl;
     }
-    else if(score>=75 && score<80)
+    else if (score >= 75 && score < 80)
     {
-        cout<<"Excellent"<<endl;
+        cout << "Excellent" << endl;
     }
-    else if(score>=60 && score<75)
+    else if (score >= 60 && score < 75)
     {
-        cout<<"Good"<<endl;
+        cout << "Good" << endl;
     }
-    else if(score>=40 && score<60)
+    else if (score >= 40 && score < 60)
     {
-        cout<<"Passed"<<endl;
+        cout << "Passed" << endl;
     }
-    else if(score>=0 && score<40)
+    else if (score >= 0 && score < 40)
     {
-        cout<<"Failed"<<endl;
+        cout << "Failed" << endl;
     }
     else
     {
-        cout<<"Invalid score."<<endl;
+        cout << "Invalid score." << endl;
     }
 
     return 0;

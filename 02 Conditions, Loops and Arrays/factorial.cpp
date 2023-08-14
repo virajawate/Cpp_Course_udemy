@@ -3,17 +3,17 @@ using namespace std;
 
 int main()
 {
-    int num=0, factorial=1;
+    int num = 0, factorial = 1;
 
-    cout<<"Enter number :";
-    cin>>num;
+    cout << "Enter number :";
+    cin >> num;
 
-    for(int i=num; i>=1; i--)
+    for (int i = num; i >= 1; i--)
     {
-        factorial*=i;
+        factorial *= i;
     }
 
-    cout<<factorial<<endl;
+    cout << factorial << endl;
 
     return 0;
 }

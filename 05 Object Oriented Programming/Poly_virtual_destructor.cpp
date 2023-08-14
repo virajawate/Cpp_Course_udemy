@@ -4,41 +4,40 @@ using namespace std;
 
 class base
 {
-    public:
+public:
     ~base()
     {
-        cout<<"Base Class is destroyed"<<endl;
+        cout << "Base Class is destroyed" << endl;
     }
 };
 
 class derived : public base
 {
-    public:
-        ~derived()
-        {
-            cout<<"Derived Class is Destroyed"<<endl;
-        }
+public:
+    ~derived()
+    {
+        cout << "Derived Class is Destroyed" << endl;
+    }
 };
 
 class base2
 {
 
-    public:
+public:
     virtual ~base2()
     {
-        cout<<"Second Base Class is destroyed"<<endl;
+        cout << "Second Base Class is destroyed" << endl;
     }
 };
 
 class derived2 : public base2
 {
-    public:
-        ~derived2()
-        {
-            cout<<"Second Derived Class is Destroyed"<<endl;
-        }
+public:
+    ~derived2()
+    {
+        cout << "Second Derived Class is Destroyed" << endl;
+    }
 };
-
 
 int main()
 {

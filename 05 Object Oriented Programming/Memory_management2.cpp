@@ -4,10 +4,10 @@ using namespace std;
 
 class Car
 {
-    private:
+private:
     int weight;
 
-    public:
+public:
     void setdata(int x)
     {
         weight = x;
@@ -21,11 +21,11 @@ class Car
 
 class BMW
 {
-    private:
+private:
     int topspeed;
     Car *ptr = new Car;
 
-    public:
+public:
     BMW(int wgt = 0, int tspeed = 0)
     {
         ptr->setdata(wgt);
@@ -52,6 +52,6 @@ int main()
 {
     BMW b(3000, 300);
 
-    cout<<"Weight of car :"<<b.getweight()<<endl;
-    cout<<"Top Speed of car :"<<b.getspeed()<<endl;
+    cout << "Weight of car :" << b.getweight() << endl;
+    cout << "Top Speed of car :" << b.getspeed() << endl;
 }

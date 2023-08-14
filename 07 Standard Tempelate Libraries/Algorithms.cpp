@@ -25,7 +25,7 @@ void display_vec(std::vector<int> vec)
 
 int main()
 {
-    vector<int> tens = {40, 30, 21, 24, 56,45,45,45, 65, 64, 53};
+    vector<int> tens = {40, 30, 21, 24, 56, 45, 45, 45, 65, 64, 53};
 
     display_vec(tens);
 
@@ -76,11 +76,11 @@ int main()
     display_vec(units);
 
     // Unique : Remove duplicates
-    cout<<"Vector Before removing duplicating : \t";
+    cout << "Vector Before removing duplicating : \t";
     display_vec(units);
     vector<int>::iterator unq = unique(units.begin(), units.end());
     units.erase(unq, units.end());
-    cout<<"Vector After removing duplicating : \t";
+    cout << "Vector After removing duplicating : \t";
     display_vec(units);
 
     return 0;

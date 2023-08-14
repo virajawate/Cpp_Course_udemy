@@ -7,19 +7,21 @@ int main()
 {
     char ch;
     ifstream in_f;
-    in_f>>ch;
+    in_f >> ch;
 
-    try{
+    try
+    {
         in_f.open("textone.txt");
     }
-    catch(...){
-        std::cout<<"File not located"<<endl;
+    catch (...)
+    {
+        std::cout << "File not located" << endl;
     }
 
-    while(!in_f.eof())
+    while (!in_f.eof())
     {
-        std::cout<<ch;
-        in_f>>ch;
+        std::cout << ch;
+        in_f >> ch;
     }
 
     in_f.close();

@@ -4,30 +4,31 @@ using namespace std;
 
 class bhai_yaar
 {
-    private:
+private:
     int ek;
-    public:
-    bhai_yaar(int x =0)
+
+public:
+    bhai_yaar(int x = 0)
     {
         ek = x;
-        cout<<"Bhai Yaar"<<endl;
+        cout << "Bhai Yaar" << endl;
     }
     friend class yaar_bhai;
 };
 
 class yaar_bhai
 {
-    private:
+private:
     int doo;
-    public:
-    yaar_bhai(int y =9)
+
+public:
+    yaar_bhai(int y = 9)
     {
         doo = y;
         bhai_yaar by(4);
-        cout<<"Yaar Bhai : le "<<by.ek<<" aur "<<doo;
+        cout << "Yaar Bhai : le " << by.ek << " aur " << doo;
     }
 };
-
 
 int main()
 {

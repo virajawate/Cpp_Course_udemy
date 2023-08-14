@@ -4,26 +4,26 @@ using namespace std;
 
 class parent // Absolute Abstract Class
 {
-    public:
-        virtual void show() = 0;
+public:
+    virtual void show() = 0;
 };
 
 class boy : public parent
 {
-    public:
-        void show()
-        {
-            cout<<"Straight face"<<endl;
-        }
+public:
+    void show()
+    {
+        cout << "Straight face" << endl;
+    }
 };
 
 class girl : public parent
 {
-    public:
-        void show()
-        {
-            cout<<"Round face"<<endl;
-        }
+public:
+    void show()
+    {
+        cout << "Round face" << endl;
+    }
 };
 
 int main()
@@ -33,5 +33,5 @@ int main()
     ptr->show();
     ptr = new girl();
     ptr->show();
-    return 0;    
+    return 0;
 }

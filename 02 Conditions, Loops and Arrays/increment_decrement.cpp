@@ -3,35 +3,35 @@ using namespace std;
 
 int main()
 {
-    int num=10;
+    int num = 10;
 
-    cout<<"The Increment series : "<<endl;
-    for(int i=0; i<num;i++)
+    cout << "The Increment series : " << endl;
+    for (int i = 0; i < num; i++)
     {
-        cout<<i<<"\t";
+        cout << i << "\t";
     }
-    cout<<endl;
+    cout << endl;
 
-    cout<<"The Increment second series : "<<endl;
-    for(int i=0; i<num;++i)
+    cout << "The Increment second series : " << endl;
+    for (int i = 0; i < num; ++i)
     {
-        cout<<i<<"\t";
+        cout << i << "\t";
     }
-    cout<<endl;
+    cout << endl;
 
-    cout<<"The Decreament series : "<<endl;
-    for(int i=num; i>0; i--)
+    cout << "The Decreament series : " << endl;
+    for (int i = num; i > 0; i--)
     {
-        cout<<i<<"\t";
+        cout << i << "\t";
     }
-    cout<<endl;
+    cout << endl;
 
-    cout<<"The Decrement second series : "<<endl;
-    for(int i=num; i>0; --i)
+    cout << "The Decrement second series : " << endl;
+    for (int i = num; i > 0; --i)
     {
-        cout<<i<<"\t";
+        cout << i << "\t";
     }
-    cout<<endl;
+    cout << endl;
 
-    return 0;    
+    return 0;
 }

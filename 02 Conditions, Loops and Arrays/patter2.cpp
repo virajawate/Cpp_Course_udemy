@@ -11,13 +11,13 @@ using namespace std;
 */
 int main()
 {
-    for(int i=5;i>=1;i--)
+    for (int i = 5; i >= 1; i--)
     {
-        for(int j=0; j<i; j++)
+        for (int j = 0; j < i; j++)
         {
-            cout<<"*";
+            cout << "*";
         }
-        cout<<endl;
+        cout << endl;
     }
     return 0;
 }
