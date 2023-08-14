@@ -1,3 +1,13 @@
+/**
+ * @file List.cpp
+ * @author Viraj Awate (viraj.awate@gmail.com)
+ * @brief This Program Shows the ops in Lists and its syntax
+ * @version 0.1
+ * @date 2023-08-15
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #include <iostream>
 #include <list>
 
