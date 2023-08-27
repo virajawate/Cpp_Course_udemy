@@ -40,6 +40,8 @@ std::vector<int> bubble_sort(std::vector<int> org)
                 std::swap(org[j], org[j + 1]);
                 swaped = true;
             }
+
+            // This will show you each iteration of sorting
             for (int i : org)
             {
                 std::cout << i << "\t";

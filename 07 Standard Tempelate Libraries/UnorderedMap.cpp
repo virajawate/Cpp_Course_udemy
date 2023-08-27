@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     unordered_map<int, string> students;
-    unordered_map<int, string> empoyee = {{1001, "Vikram"}, {1002, "Ravesh"}, {1003, "Ram"}, {104, "Gorav"}};
+    unordered_map<int, string> empoyee = {{1001, "Vikram"}, {1002, "Ravesh"}, {1003, "Ram"}, {1004, "Gorav"}};
 
     /*
     Printing the Map using iterator....
@@ -43,7 +43,7 @@ int main()
     Deleting data from map
     */
     cout << endl
-         << "Deleting the top of empoyee...." << endl;
+        << "Deleting the top of empoyee...." << endl;
     unordered_map<int, string>::iterator del = empoyee.begin();
     empoyee.erase(del);
     for (unordered_map<int, string>::iterator i = empoyee.begin(); i != empoyee.end(); i++)
